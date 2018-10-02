@@ -25,6 +25,8 @@
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -33,13 +35,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.textBoxPassword);
@@ -49,8 +51,31 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(244, 150);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(416, 486);
+            this.panel1.Size = new System.Drawing.Size(416, 497);
             this.panel1.TabIndex = 0;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.PowderBlue;
+            this.label5.Location = new System.Drawing.Point(171, 471);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(48, 13);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Sign Up";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.PowderBlue;
+            this.label4.Location = new System.Drawing.Point(150, 444);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(96, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Forgot Password!";
             // 
             // pictureBox1
             // 
@@ -70,7 +95,7 @@
             this.textBoxPassword.Location = new System.Drawing.Point(52, 333);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
-            this.textBoxPassword.Size = new System.Drawing.Size(311, 24);
+            this.textBoxPassword.Size = new System.Drawing.Size(311, 20);
             this.textBoxPassword.TabIndex = 5;
             // 
             // button1
@@ -91,7 +116,7 @@
             this.textBoxUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUsername.Location = new System.Drawing.Point(52, 268);
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(311, 24);
+            this.textBoxUsername.Size = new System.Drawing.Size(311, 20);
             this.textBoxUsername.TabIndex = 4;
             // 
             // label2
@@ -101,7 +126,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(47, 302);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 28);
+            this.label2.Size = new System.Drawing.Size(76, 21);
             this.label2.TabIndex = 2;
             this.label2.Text = "Password";
             // 
@@ -112,7 +137,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(47, 237);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 28);
+            this.label1.Size = new System.Drawing.Size(81, 21);
             this.label1.TabIndex = 2;
             this.label1.Text = "Username";
             // 
@@ -124,7 +149,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(235, 65);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(210, 54);
+            this.label3.Size = new System.Drawing.Size(168, 45);
             this.label3.TabIndex = 1;
             this.label3.Text = "Welcome!";
             // 
@@ -136,21 +161,9 @@
             this.panel2.Size = new System.Drawing.Size(415, 5);
             this.panel2.TabIndex = 2;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.PowderBlue;
-            this.label4.Location = new System.Drawing.Point(150, 444);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 19);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Forgot Password!";
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -162,6 +175,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form1";
             this.Text = "LOGIN";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -182,6 +196,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 
