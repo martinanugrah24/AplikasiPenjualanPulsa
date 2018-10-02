@@ -5,6 +5,7 @@ using System.Windows.Forms;
 namespace FormLogin {
     public partial class Form1 : Form {
         Form2 form2;
+        Form3 form3;
         public Form1() {
             InitializeComponent();
             panel1.BackColor = Color.FromArgb(100, Color.White);
@@ -20,6 +21,16 @@ namespace FormLogin {
                     textBoxPassword.Clear();
                 }
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            form3.Show();
         }
     }
 }
