@@ -13,7 +13,6 @@ namespace FormLogin {
         }
 
         private void buttonRegister_Click(object sender, EventArgs e) {
-            form1.myCon.Close();
             if (textBoxName.Text != "" && textBoxPassword.Text != "" && textBoxUsername.Text != "" && textBoxPhone.Text != "") {
                 try {
                     MySqlCommand cmd = new MySqlCommand("insert into users values(@id, @username, @password, @name, @phone_number)", form1.myCon);

@@ -105,5 +105,11 @@
   <ItemGroup>
     <None Include="Resources\login-background-image-5.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vector-wallpapers-25341-9610475.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\295128.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

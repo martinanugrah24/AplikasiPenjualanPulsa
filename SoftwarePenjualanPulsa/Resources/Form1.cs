@@ -22,7 +22,7 @@ namespace FormLogin {
             InitializeComponent();
             panel1.BackColor = Color.FromArgb(100, Color.White);
             textBoxPassword.UseSystemPasswordChar = true;
-            form2 = new Form2(this);
+            form2 = new Form2();
             form3 = new Form3(this);
             string conStr = "datasource=localhost; port=3306; username=root; password=pemweb; database=penjualan_pulsa; SslMode=none";
             myCon = new MySqlConnection(conStr);
@@ -46,9 +46,8 @@ namespace FormLogin {
             bgw.ProgressChanged += new ProgressChangedEventHandler(bgw_ProgressChanged);
             bgw.RunWorkerCompleted += new RunWorkerCompletedEventHandler(bgw_RunWorkerCompleted);
             bgw.WorkerReportsProgress = true;
-            if (!bgw.IsBusy) {
+            if (!bgw.IsBusy)
                 bgw.RunWorkerAsync();
-            }
         }
 
         private delegate void updateProgressDelegate();
@@ -82,10 +81,10 @@ namespace FormLogin {
                 }
             } else {
                 form2.Show();
-                this.Hide();
             }
             table.Clear();
             myCon.Close();
+            this.Hide();
         }
 
         private void Form1_Load(object sender, EventArgs e) {

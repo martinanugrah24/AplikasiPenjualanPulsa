@@ -63,6 +63,16 @@ namespace FormLogin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _295128 {
+            get {
+                object obj = ResourceManager.GetObject("295128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap avatar_question_round {
             get {
                 object obj = ResourceManager.GetObject("avatar_question_round", resourceCulture);
@@ -76,6 +86,16 @@ namespace FormLogin.Properties {
         internal static System.Drawing.Bitmap login_background_image_5 {
             get {
                 object obj = ResourceManager.GetObject("login_background_image_5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vector_wallpapers_25341_9610475 {
+            get {
+                object obj = ResourceManager.GetObject("vector-wallpapers-25341-9610475", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
